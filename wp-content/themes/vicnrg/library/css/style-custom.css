@@ -609,3 +609,5 @@ ul.sub-menu { display: none; }
 .default-content {
   padding-top: 100px;
 }
+
+.content p { font-size: 14px; line-height: 26px; }
