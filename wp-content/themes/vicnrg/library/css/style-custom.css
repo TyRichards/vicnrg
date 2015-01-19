@@ -53,11 +53,15 @@ code {
 /* End of sticky footer style */
 
 .page-template-page-home-php #wrap {
-height: 100%;
+width: 100%!important;
 background-image: url('../images/home-bg.jpg');
 background-position-x: center;
 background-repeat: no-repeat;
 background-color: lightgrey;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 #wrap {
@@ -183,7 +187,7 @@ min-height: 39px;
 }
 
 .home #wrap > .container {
-padding: 210px 15px 0;
+padding: 250px 15px 0;
 }
 
 .lg-logo {
