@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Marcellus);
+
+/* Responsive Design */
+
+/* small devices only */
+@media (max-width: 767px) {
+
+	.home #wrap .home-content {
+	padding: 125px 15px 0 !important;
+	}
+	
+	.dropdown-nav {
+		float: none!important;
+		}
+		
+	.top-nav .container {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	}
+	
+	.sidebar-left .sidebar-wrap {
+	padding-right: 0px;
+	border-right: none;
+	margin-right: 0px;
+	}
+	
+	.sidebar-right .sidebar-wrap {
+	padding-left: 0px;
+	border-left: none;
+	margin-left: 0px;
+	}
+
+
+}
+
+/* iphone portrait only */
+@media (max-width: 400px) {
+
+#wrap {
+min-height: 750px!important;
+}
+
+}
+
+
+
+/* tablet only */
+@media (min-width: 768px) and (max-width: 991px) { 
+
+#menu-footer-menu a {
+
+}
+
+.navbar-default .navbar-nav>li>a {
+font-size: 11px!important;
+padding: 9px 17px 8px 17px;
+}
+
+.sidebar-left .sidebar-wrap {
+padding-right: 30px;
+border-right: 2px solid #dddddd;
+margin-right: 0px;
+}
+
+.sidebar-right .sidebar-wrap {
+padding-left: 30px;
+border-left: 2px solid #dddddd;
+margin-left: 0px;
+}
+
+}
+
+/* iPads & iPhones */
+@media (max-width: 992px) {
+
+	.navbar-collapse ul li a {
+	text-align: center;
+	}
+	
+	.navbar-default .navbar-nav .current_page_item, .navbar-default .navbar-nav .current_page_item:hover {
+	background-image: none!important;
+	}
+	
+	#footer {
+	height: auto!important;
+	}
+	
+	#menu-footer-menu li {
+	display: inline-block;
+	}
+		
+	.col-last {
+	text-align: center;
+	}	
+
+}
+
+/* ipad and larger */
+@media (min-width: 768px) {
+
+	.navbar-nav>li>a {
+	padding-top: 9px;
+	padding-bottom: 8px;
+	padding-right: 22px;
+	padding-left: 22px;
+	}
+	
+	#footer .collapse.navbar-collapse {
+	padding: 27px 0 0 0;
+	}
+
+	.brand-header .tagline {
+	font-size: 13px!important;
+	}
+	
+	.lead {
+	font-size: 25px;
+	}
+	
+	#menu-footer-menu.navbar-nav li {
+	float: none;
+	display: inline-block;
+}
+	
+	#menu-footer-menu.navbar-nav {
+		float:none;
+	}
+
+}
+
+/* desktops and up */
+@media (min-width: 992px) {
+
+	#footer .col {
+	border-right: 1px solid #6e7196;
+	min-height: 90px;
+	}
+	
+	#footer .col,
+	#footer .col-last {
+	padding-right: 40px;
+	padding-left: 40px;
+	}
+
+}
