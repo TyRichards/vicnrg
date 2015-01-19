@@ -49,9 +49,10 @@
         <!-- Bootstrap Core -->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/bootstrap.min.css" type="text/css" media="all">
         
-        <!-- Custom Paradox Styles -->      
+        <!-- Custom Paradox Styles -->          
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/style-custom.css" type="text/css" media="all">     
-
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/mediaqueries-custom.css" type="text/css" media="all">  
+    
     </head>
 
   <body <?php body_class(); ?>>
@@ -59,25 +60,36 @@
     <!-- Wrap all page content here -->
     <div id="wrap">
 
+            <div class="brand-header container hidden-xs">
+                <div class="header-logo col-sm-4 col-md-3">
+                    <img class="img-responsive text-center" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-blue.svg" alt="VicNRG" width="100%">
+                </div>
+                <div class="col-sm-8 col-md-9">
+                    <p class="tagline text-right">
+                        <i>In the quest for energy independence, VicNRG is the only real solution.</i>
+                    </p>
+                </div>
+            </div>
+
       <!-- Fixed navbar -->
-      <div class="top-nav navbar navbar-default navbar-fixed-top col-xs" role="navigation">
+      <div class="top-nav navbar navbar-default col-xs" role="navigation">
         <div class="container">
         
-            <div class="navbar-header">
-                <div class="header-logo-sm pull-left">
-                    <img class="logo-sm" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white.svg" alt="VicNRG">
-                </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <!-- <a class="navbar-brand" href="#">Project name</a> -->
-                <!--<img src="..." class="img-responsive" alt="Responsive image">-->            
+          <div class="navbar-header">
+            <div class="header-logo-sm pull-left visible-xs">
+                <img class="logo-sm" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white.svg" alt="VicNRG">
             </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#">Project name</a> -->
+            <!--<img src="..." class="img-responsive" alt="Responsive image">-->            
+          </div>
           
-          <div class="dropdown-nav pull-right no-padding">    
+          <div class="dropdown-nav col-md-10 pull-left no-padding"> 
               <?php
                     
                 $header_nav = array(
@@ -102,14 +114,15 @@
                 wp_nav_menu( $header_nav );         
                 
               ?> 
+                          
           </div>
           
 <!--          <div class="header-phone-div col-md-2 no-padding pull-right hidden-xs">
-          <ul id="header-phone-ul" class="nav navbar-nav" style="width: 100%; text-align: center; ">          
-              <li class="header-phone">
-                 <a>817.562.4888</a>
-              </li> 
-          </ul>
+              <ul id="header-phone-ul" class="nav navbar-nav" style="width: 100%; text-align: center; ">          
+                  <li class="header-phone">
+                     <a>817.562.4888</a>
+                  </li> 
+              </ul>
           </div> -->
           
           <!-- original bootstrap example menu -->         

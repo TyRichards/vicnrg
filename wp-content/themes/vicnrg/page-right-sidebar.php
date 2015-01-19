@@ -5,7 +5,7 @@ Template Name: Right Sidebar
 ?>
 
 <?php get_header(); ?>
-	<div class="container content">
+	<div class="default-content container content">
 		
 		<div class="container main-col col-sm-7 col-md-7 col-lg-7">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>					

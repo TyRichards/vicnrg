@@ -63,18 +63,21 @@
       <div class="top-nav navbar navbar-default navbar-fixed-top col-xs" role="navigation">
         <div class="container">
         
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- <a class="navbar-brand" href="#">Project name</a> -->
-	        <!--<img src="..." class="img-responsive" alt="Responsive image">-->            
-          </div>
+            <div class="navbar-header">
+                <div class="header-logo-sm pull-left">
+                    <img class="logo-sm" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white.svg" alt="VicNRG">
+                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#">Project name</a> -->
+    	        <!--<img src="..." class="img-responsive" alt="Responsive image">-->            
+            </div>
           
-		  <div class="dropdown-nav col-md-10 pull-left no-padding">	
+		  <div class="dropdown-nav col-md-10 pull-right no-padding">	
 			  <?php
 					
 				$header_nav = array(
@@ -101,13 +104,13 @@
 			  ?> 
 		  </div>
 		  
-		  <div class="header-phone-div col-md-2 no-padding pull-right hidden-xs">
+<!-- 		  <div class="header-phone-div col-md-2 no-padding pull-right hidden-xs">
 		  <ul id="header-phone-ul" class="nav navbar-nav" style="width: 100%; text-align: center; ">		  
 			  <li class="header-phone">
 				 <a>817.562.4888</a>
 			  </li> 
 		  </ul>
-		  </div>
+		  </div> -->
 		  
 		  <!-- original bootstrap example menu -->         
           

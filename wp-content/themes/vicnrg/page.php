@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="container content">
+	<div class="default-content container content">
 		
 		<div class="container main-col col-sm-7 col-sm-push-5 col-md-7 col-md-push-5 col-lg-7 col-lg-push-5">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>					

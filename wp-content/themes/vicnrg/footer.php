@@ -13,14 +13,14 @@
 		        
 						<div class="clearfix visible-xs visible-sm"></div>
 		        
-		        <div class="col col-xs-12 col-xs-offset-0 col-md-6 block">
+		        <div class="col col-xs-12 col-xs-offset-0 col-md-12 block">
 						  <?php 
 						  		// Find way to add this to functions.php 
 								$footer_nav = array(
 									'theme_location'  => '',
 									'menu'            => 'Footer Menu',
 									'container'       => 'div',
-									'container_class' => 'text-center',
+									'container_class' => 'text-center cont',
 									'container_id'    => '',
 									'menu_class'      => 'nav navbar-nav',
 									'menu_id'         => '',
@@ -40,14 +40,7 @@
 						   ?>  				  							
 		        </div>
 		        
-						<div class="clearfix visible-xs visible-sm"></div>
-		        
-		        <div class="col-last col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-0 hidden-xs">
-		          <p class="faded">Call us today:</p>
-		          <p class="footer-phone">817.562.4888</p>
-		          <p><button type="button" class="btn btn-block btn-footer btn-xs" href="mailto:info@vicfuel.com">info@vicfuel.com</button></p>
-		        </div>
-		        
+				<div class="clearfix visible-xs visible-sm"></div>		       		        
 		        <div class="clearfix"></div>
 		        
 			</div> <!-- end .row -->                
