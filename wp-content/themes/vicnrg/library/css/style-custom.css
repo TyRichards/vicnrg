@@ -351,6 +351,10 @@ font-weight: 400;
 letter-spacing: -1px;
 }
 
+h2 {
+  font-size: 25px;
+}
+
 h4.widgettitle {
 font-size: 25px;
 }
