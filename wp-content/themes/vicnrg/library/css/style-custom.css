@@ -414,13 +414,13 @@ border-left: 9px solid #eeeeee;
 
 li {
 font-size: 16px;
-line-height: 28px;
+line-height: 35px;
 }
 
 ul, ol {
-margin-top: 0;
+margin-top: 20px;
 margin-bottom: 30px;
-padding-left: 60px;
+padding-left: 80px;
 }
 
 .content {
