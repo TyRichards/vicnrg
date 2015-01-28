@@ -17,13 +17,17 @@ html {
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 100%;
   height: auto;
   min-height: 1100px;
   /* Negative indent footer by its height */
   margin: 0 auto -187px;
   /* Pad bottom by footer height */
   padding: 0 0 187px;
+}
+
+/* strange height issue on product page and other long pages */
+.page-id-143 #wrap {
+  min-height: 2100px;
 }
 
 /* Set the fixed height of the footer here */
