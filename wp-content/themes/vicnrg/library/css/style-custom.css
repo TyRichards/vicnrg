@@ -214,6 +214,10 @@ color: #ffffff;
 height: 187px;
 background-color: #27253b;
 border-top: 8px solid #39a0bf;
+position: absolute;
+bottom: 0;
+width: 100%;
+/*height: 60px;*/
 }
 
 .footer-pad {
