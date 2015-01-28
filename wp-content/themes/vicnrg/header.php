@@ -65,7 +65,7 @@
         
             <div class="navbar-header">
                 <div class="header-logo-sm pull-left">
-                    <img class="logo-sm" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white.svg" alt="VicNRG">
+                    <a href="/"><img class="logo-sm" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white.svg" alt="VicNRG"></a>
                 </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
