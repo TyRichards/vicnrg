@@ -5,7 +5,7 @@
 			<div class="row">
 			
 		        <div class="col col-xs-6 col-xs-offset-3 col-md-3 col-md-offset-0">
-		          <div class="footer-logo" style="display:none;">
+		          <div class="footer-logo">
 								<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white.svg" alt="footer-logo" width="100%" />          
 		          </div>
 		          <!--<img src="..." class="img-responsive" alt="Responsive image">-->
