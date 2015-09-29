@@ -2,7 +2,7 @@
 /**
  * A class with functions the perform a backup of the WordPress database
  *
- * @copyright Copyright (C) 2011-2014 Awesoft Pty. Ltd. All rights reserved.
+ * @copyright Copyright (C) 2011-2015 Awesoft Pty. Ltd. All rights reserved.
  * @author Michael De Wildt (http://www.mikeyd.com.au/)
  * @license This program is free software; you can redistribute it and/or modify
  *          it under the terms of the GNU General Public License as published by
@@ -183,10 +183,14 @@ class WPB2D_DatabaseBackup
                 foreach ($table_data as $data) {
                     $data_out = '(';
                     foreach ($data as $value) {
-                        $value = addslashes($value);
-                        $value = str_replace("\n", "\\n", $value);
-                        $value = str_replace("\r", "\\r", $value);
-                        $data_out .= "'$value', ";
+                        if (is_numeric($value)) {
+                            $data_out .= "$value, ";
+                        } else {
+                            $value = addslashes($value);
+                            $value = str_replace("\n", "\\n", $value);
+                            $value = str_replace("\r", "\\r", $value);
+                            $data_out .= "'$value', ";
+                        }
                     }
                     $out .= rtrim($data_out, ' ,') . "),\n";
                     $row_count++;

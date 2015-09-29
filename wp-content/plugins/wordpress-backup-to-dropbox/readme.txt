@@ -1,12 +1,12 @@
 === WordPress Backup to Dropbox ===
 Contributors: michael.dewildt
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=38SEXDYP28CFA
+Donate link: https://influx.com
 Tags: backup, dropbox
 Requires at least: 3.0
-Tested up to: 3.8
+Tested up to: 4.3
 Stable tag: trunk
 
-Keep your valuable WordPress website, its media and database backed up to Dropbox in minutes with this sleek, easy to use plugin.
+Keep your valuable WordPress website, its media and database backed up to Dropbox in minutes with this sleek, easy to use plugin. Need help? Please email support@wpb2d.com
 
 == Description ==
 
@@ -86,6 +86,7 @@ For news and updates please visit my blog - http://www.mikeyd.com.au/category/wo
 * Russian (ru_RU)
 * Sweedish (sv_SE)
 * Finland (fi_FI)
+* Danish (da_DK)
 
 == Installation ==
 
@@ -94,6 +95,12 @@ For news and updates please visit my blog - http://www.mikeyd.com.au/category/wo
 3. The first time you access the settings you will be prompted to authorize it with Dropbox
 
 == Frequently Asked Questions ==
+
+= I am getting this error: `Error message: Error Processing Request: error:0D0890A1:asn1 encoding routines:ASN1_verify:unknown message digest algorithm` =
+
+This is due to the recent [Heartbleed vulnerability](http://heartbleed.com/) and indicates that your server has an outdated version of OpenSSL that is no longer compatible with Dropbox and must be updated in order to continue using the plugin.
+
+Please contact your host to get it updated.
 
 = Why won’t my backup start? =
 
@@ -138,6 +145,28 @@ You can also install the zip [premium extension](http://wpb2d.com/premium) that 
 3. Premium Extensions: Add extra functionality with ease and a 60 day money back guarantee.
 
 == Changelog ==
+
+= 4.3 =
+* Tested to work with WordPress 4.3
+
+= 4.2 =
+* Tested to work with WordPress 4.2
+
+= 4.1 =
+* Make use of plugin_dir_url func instead of WP_PLUGIN_URL
+* Fixed reflected XSS issue, thanks Kacper Szurek for identifying :)
+* Tested to work with WordPres 4.1
+
+= 4.0 =
+* Versioning will now match that of WordPress
+* Tested to work with WordPres 4.0
+
+= 1.9 =
+* Tested to work with WordPress 3.9.
+* Fixed bug in SQL dump where NULL was outputting as '' and 0 as '0'; thanks for the heads up Tervor!
+* Add Danish Translations; thanks Henrik!
+* Add constant to configure the restart time; NO_ACTIVITY_WAIT_TIME defaults to 5 mins.
+* Add Danish translation thanks Michael!
 
 = 1.8.1 =
 * Fix some spelling mistakes

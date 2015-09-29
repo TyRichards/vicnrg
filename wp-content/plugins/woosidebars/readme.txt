@@ -1,9 +1,9 @@
 === WooSidebars ===
 Contributors: woothemes, mattyza
 Tags: widgets, sidebars, widget-areas
-Requires at least: 3.3
-Tested up to: 3.6.0
-Stable tag: 1.3.1
+Requires at least: 4.1
+Tested up to: 4.3
+Stable tag: 1.4.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,6 +71,19 @@ Looking to contribute code to this plugin? [Fork the repository over at GitHub](
 
 == Upgrade Notice ==
 
+= 1.4.3 =
+Bug fix and maintenance release.
+
+= 1.4.2 =
+Security Fix for XSS vulnerability
+
+= 1.4.1 =
+Fixes an error notice on the homepage, caused by the tag check logic.
+
+= 1.4.0 =
+WordPress 3.8 compatibility.
+Adds "posts tagged with" condition.
+
 = 1.3.1 =
 Bug fix to ensure multiple conditions save correctly.
 
@@ -87,6 +100,24 @@ Updated for WordPress 3.5+ compatibility. Adjusted "Advanced" tab logic. Fixed b
 Moved to WordPress.org. Woo! Added scope to methods and properties where missing.
 
 == Changelog ==
+
+= 1.4.3 =
+* 2015-09-22
+* Ensures condition headings are present before attempting to output in the conditions meta box.
+
+= 1.4.2 =
+* 2015-04-22
+* Security Fix for remove_query_arg vulnerability
+
+= 1.4.1 =
+* 2015-02-17
+* Fixes an error notice on the homepage, caused by the tag check logic.
+
+= 1.4.0 =
+* 2015-02-17
+* WordPress 3.8 compatibility.
+* Adds "posts tagged with" condition.
+
 
 = 1.3.1 =
 * 2013-08-13
