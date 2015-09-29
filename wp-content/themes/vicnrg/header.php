@@ -14,7 +14,7 @@
 
         <?php // mobile meta (hooray!) ?>
         <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
+        <meta name="MobileOptimized" content="320"> 
         
         
             <!-- Bootstrap Meta -->     
